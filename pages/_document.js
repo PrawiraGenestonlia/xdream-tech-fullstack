@@ -10,13 +10,47 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="manifest" href="/manifest.json" />
+          <meta charset="utf-8" />
+          <title>xdream-tech</title>
           <meta name="xdream-tech" content="xdream-tech" />
+          <meta name="Description" content="xdream-tech" />
+          <meta name="theme-color" content="#001338" />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
+        <style jsx>{`{
+          .loader {
+            position: absolute;
+            top: calc(50% - 4em);
+            left: calc(50% - 4em);
+            width: 6em;
+            height: 6em;
+            border: 1.1em solid rgba(0, 0, 0, 0.2);
+            border-left: 1.1em solid rgb(100, 146, 237);
+            border-radius: 50%;
+            animation: load8 1.1s infinite linear;
+            transition: opacity 0.3s;
+          }
+
+          .loader--hide {
+            opacity: 0;
+            pointer-events: none;
+          }
+
+          @keyframes load8 {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          }`}
+        </style>
       </Html>
     )
   }
