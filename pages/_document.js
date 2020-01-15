@@ -11,13 +11,13 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charset="utf-8" />
-          <title>xdream-tech</title>
           <meta name="xdream-tech" content="xdream-tech" />
           <meta name="Description" content="xdream-tech" />
           <meta name="theme-color" content="#001338" />
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
+          <title>xdream-tech</title>
           <Main />
           <NextScript />
         </body>
